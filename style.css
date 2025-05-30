@@ -168,6 +168,7 @@ i{
      border-bottom: 1px solid ;
      line-height: 24px;
      padding-bottom: 1rem;
+     color: rgb(113,114,117);
 }
 #story  .frist-story #red-p{
      color: #c12828;
@@ -188,15 +189,15 @@ i{
     position: relative;
     background-color: #d6a354;
     padding: 10px;
-    transform: translate3d(-3px, 3px, 2px);
-    transition: background-color 0.4s ease, transform 0.4s ease;
+    transition: background-color 0.4s ease, transform 0.4s ease-in-out;
 }
 #story .frist-story #meet .meet-photo:hover{
    background-image:  linear-gradient(to right ,rgb(253, 187, 45),rgb(34, 193, 195));
-   transform: translate3d(3px, -3px , 7px);
+   transform: scale(1.05); 
 }
 #story .frist-story #meet .meet-photo img{
     width: 100%;
+    max-height: 250px;
     border-radius: 20px;
     transform: translateY(-10px) rotate(8deg)
 }
@@ -238,10 +239,319 @@ i{
     color: #fff;
     font-size: 0.9rem;
 }
+.second-story{
+    /* height: 49vh; */
+    width: 100%;
+   background: url('https://templatemo.com/templates/templatemo_585_barber_shop/images/barber-customer-giving-high-five.jpg') center / cover no-repeat;
+   padding: 100px 50px;
+   background-attachment: fixed;
+}
+.second-story  #content{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second-story  #content h2{
+    color: #c12828;
+    font-size: 2.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.second-story  #content p{
+   font-size: 1.25rem;
+   color: #fff;
+   list-style: 25px;
+   margin-bottom: 1rem;
+}
+.second-story  #content strong{
+   padding: 10px 20px;
+   font-size: 1rem;
+   font-weight: 700;
+   background-color: #d6a354;
+   color: black;
+   margin-block: 10px;
+   border-radius: 20px;
+}
+
+/* service  */
+
+#service{
+     min-height: 100vh;
+    padding: 100px 50px;
+}
+#service h1{
+    font-size: 2.875rem;
+    font-weight: 700;
+    margin-inline: 10px;
+    margin-bottom: 2.5rem;
+}
+#service .container{
+    height: 100%;
+    padding: 0px 12px;
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    gap: 30px;
+}
+.container .ser-photo{
+    border-radius: 15px;
+    /* height: 280px;  */
+    background-color: rgb(99, 95, 95);
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.container .ser-photo img{
+    width: 100%;
+    height: auto;
+     border-radius: 15px;
+     display: block;
+}
+.container .ser-photo:hover img{
+    transform: scale(1.01);
+}
+.container .ser-photo:hover div{
+    transform: scale(1.02);
+    border: 5px #d6a354 solid;
+}
+.container .ser-photo div{
+    border: 1px #fff solid;
+    border-radius: 20px;
+    width: 90%;
+    /* height: 100%; */
+    padding: 20px ;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.container .ser-photo div .h4-content{
+   color: #fff;
+   font-size: 1.75rem;
+   font-weight: 700;
+}
+.container .ser-photo div .span-content{
+    background-color: #d6a354;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 700;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* bookset */
+#bookset{
+    min-height: 100vh;
+    background: url('https://templatemo.com/templates/templatemo_585_barber_shop/images/vintage-chair-barbershop.jpg') center /cover no-repeat;
+    padding: 100px 50px;
+    background-attachment: fixed;
+}
+#bookset form{
+    background-color: #fff;
+    padding: 65px;
+    border-radius: 20px;
+}
+form #content{
+    margin-bottom: 2.8rem;
+    text-align: center;
+}
+form #content h2{
+    font-size: 2.875rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+form #content p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom:1rem;
+    color: #717275;
+}
+form .inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    padding-inline: 1rem;
+}
+form .style-input{
+     padding: 14px 13px;
+    color: #717275;
+    background-color: #fff;
+    border-radius: 6px;
+    border:1px #717275 solid;
+    font-size: 1rem;
+}
+form  .style-input:focus{
+    border: none;
+    outline: 3px #c2dbfe solid;
+    background-color: #f0f8ff;
+}
+form  .style-input::placeholder{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #6c757d;
+}
+form .inputs #selected , form .inputs #time , form .inputs #date{
+   font-size: 1.2rem;
+   font-size: 1.2rem; 
+    font-weight: bolder;
+    color: #6c757d;
+}
+ form  #Area{
+    width: 100%;
+    padding-inline: 1rem;
+    margin: 10px 0px;
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+    gap: 30px;
+} 
+form #Area textarea{
+    width: 100%;
+}
+form #Area button{
+    padding: 15px 50px;
+    background-color: #c12828;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold; 
+}
+form #Area button:hover{
+    background-color: #da9329;
+}
+
+/* price section */
+#price{
+    min-height: 100vh;
+    padding: 100px 50px;
+}
+#price .container{
+    display :flex;
+    gap :30px;
+}
+#price #content{
+    flex: 1;
+}
+#content h2{
+    font-size: 2.875rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+#content p{
+   font-size: 1rem;
+   font-weight: 700;
+   margin-bottom: 24px;
+}
+.six{
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+} 
+.six .six-span{
+   height: 2px;
+   background-color: #717275;
+   flex: 1;
+   display: block;
+   margin-inline: 15px;
+} 
+.six .strong{
+   color: #d6a354;
+} 
+
+#price  #image{
+    /* height: 280px; */
+     max-width: 300px;
+    background-color: #d6a354; 
+    border-radius: 20px;
+    transition: all 0.4s ease;
+}
+#price  #image:hover{
+   background-image:  linear-gradient(to right ,rgb(253, 187, 45),rgb(34, 193, 195));
+   transform: scale(1.05); 
+}
+#price  #image img{
+    max-width: 100%;
+    height: 300px;
+    border-radius: 20px;
+     transform: translateY(-10px) rotate(8deg)
+}
 
 
 
 
+
+
+
+@media only screen and (max-width: 991px){
+      #story{
+        padding: 50px 25px;
+      }
+      #story .frist-story #meet{
+        flex-direction: column;
+      }
+    #story  .frist-story #meet .meet-photo{
+         width: 100%;
+         height: 20%;
+         margin-block: 10px;
+      }
+      .frist-story #meet .meet-photo img{
+         width: 100% ;
+         max-height: 250px;
+      }
+      .frist-story #meet .meet-photo div{
+         width: 100% ;
+         right: 0;
+      }
+      /* styling service */
+      #service .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+      #service h1{
+        font-size: 2.5rem;
+      }
+      /* bookset  */
+      #bookset{
+        padding: 50px 25px;
+      }
+      form #content h2{
+        font-size: 2.25rem;
+      }
+    form .inputs{
+        grid-template-columns: 1fr;
+    }
+    form #Area button{
+        width: 80%;
+    }
+    /* price list */
+    #price{
+        padding: 50px 25px;
+    }
+     #content h2{
+        font-size: 2.25rem;
+    }
+    #price .container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    #price #image{
+        max-width: 100%;
+        margin: 1rem;
+    }
+    #price #image img{
+        width: 100%;
+    } 
+}
 
 
 @media only screen and (max-width: 776px){
@@ -303,8 +613,24 @@ i{
    #home p{
     margin-bottom: 2rem;
    }
-     
 }
+@media screen  and (max-width: 500px){
+   #bookset form{
+     padding: 40px;
+   }
+   form .inputs{
+     padding: 0;
+   }
+   form #Area{
+    padding: 0;
+   }
+
+   /* styling service */
+   #story  .frist-story h1{
+     font-size: 2.25rem;
+   }
+}
+
 @media screen  and (max-width: 482px){
 
     #home .content{
@@ -320,7 +646,32 @@ i{
    #home #frist-btn{
     margin-bottom: 15px;
    }
+   /* scond strory */
+   .second-story{
+    padding: 100px 25px;
+   }
+   
+   .second-story  #content h2{
+    font-size: 2.3rem;
+   }
+   /* services  */
+   #service{
+     padding-inline: 1rem;
+   }
+   #service h1{
+     font-size: 2.25rem;
+   }
+
+   /* price */
+   .six{
+    font-size: 1.125rem;
+   }
+    #content h2{
+    font-size: 1.25rem;
+   }
 }
+
+
 @media screen  and (max-width: 421px){
 
     #home .content{
@@ -336,4 +687,38 @@ i{
    #home #frist-btn{
     margin-bottom: 15px;
    }
+   #story  .frist-story h1{
+    font-size: 1.75rem;
+   }
+
+    #story{
+        padding-inline: 10px;
+    }
+    /* service */
+     #service{
+     padding-inline: 0.75rem;
+   }
+   #service h1{
+     font-size: 1.75rem;
+   }
+    .container .ser-photo div{
+        padding: 13px;
+    }
+    .container .ser-photo div .h4-content{
+        font-size: 1.35rem;
+    }
+    /* bookset  */
+   #bookset form{
+     padding: 20px;
+   }
+  form #content h2{
+    font-size: 1.75rem;
+  }
+
+  /* price  */
+  #price{
+    padding: 50px 16px;
+  }
 }
+
+
